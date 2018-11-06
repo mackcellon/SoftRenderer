@@ -37,5 +37,14 @@ public:
 		_22 = cosf(radian);
 	}
 
+
+	void Transpose()
+	{
+		float temp = _12;
+		_12 = _21;
+		_21 = temp;
+
+	}
+
 	Matrix2 operator *(const Matrix2& Mat) const;
 };
